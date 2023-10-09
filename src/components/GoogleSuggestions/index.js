@@ -10,21 +10,21 @@ class GoogleSuggestions extends Component {
     searchInput: '',
   }
 
-  updatedSearchInput = value => {
+  updateSearchInput = value => {
     this.setState({
       searchInput: value,
     })
   }
 
-  onChangeSearch = event => {
+  onChangeSearchInput = event => {
     this.setState({
       searchInput: event.target.value,
     })
   }
 
   render() {
-    const {suggestionsList} = this.props
     const {searchInput} = this.state
+    const {suggestionsList} = this.props
     const searchResults = suggestionsList.filter(eachDenomination =>
       eachDenomination.suggestion
         .toLowerCase()
@@ -36,29 +36,30 @@ class GoogleSuggestions extends Component {
         <div className="google-suggestions-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
-            alt="google"
+            alt="google logo"
             className="google-logo"
           />
           <div className="search-input-suggestions-container">
             <div className="search-input-container">
               <img
-                alt="search-icon"
+                alt="search icon"
                 src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
                 className="search-icon"
               />
               <input
+                type="search"
                 className="search-input"
-                placeholder="search"
-                onChange={this.onChangeSearch}
+                placeholder="Search Google"
+                onChange={this.onChangeSearchInput}
                 value={searchInput}
               />
             </div>
             <ul className="suggestions-list">
-              {searchResults.map(eachList => (
+              {searchResults.map(eachSuggestion => (
                 <SuggestionItem
-                  key={eachList.id}
-                  suggestionDetails={eachList}
-                  updatedSearchInput={this.updatedSearchInput}
+                  key={eachSuggestion.id}
+                  suggestionDetails={eachSuggestion}
+                  updatedSearchInput={this.updateSearchInput}
                 />
               ))}
             </ul>
