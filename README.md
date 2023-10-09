@@ -1,4 +1,4 @@
-In this project, let's build a **Google Search Suggestions** app by applying the concepts we have learned till now.
+In this project, I have build a **Google Search Suggestions** app by applying the react concepts.
 
 ### Refer to the image below:
 
@@ -18,32 +18,18 @@ In this project, let's build a **Google Search Suggestions** app by applying the
 
 </details>
 
-### Set Up Instructions
-
-<details>
-<summary>Click to view</summary>
-
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
-
 ### Completion Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionality added</summary>
 <br/>
 
-The app must have the following functionalities
+This app have the following functionalities
 
 - Initially, all suggestions in the `suggestionsList` should be displayed
 - When a value is provided in the search input, then display the suggestions which includes the search input irrespective of case
 - When the arrow of a suggestion is clicked, then the value of the search input should be updated with the respective suggestion clicked
 - The `GoogleSuggestions` component receives the `suggestionsList` as a prop. It consists of a list of suggestion objects with the following properties in each suggestion object
-
-  |    Key     | Data Type |
-  | :--------: | :-------: |
-  |     id     |  Number   |
-  | suggestion |  String   |
 
 </details>
 
@@ -62,7 +48,7 @@ The app must have the following functionalities
 <summary>Implementation Files</summary>
 <br/>
 
-Use these files to complete the implementation:
+these files contain all implementations:
 
 - `src/components/GoogleSuggestions/index.js`
 - `src/components/GoogleSuggestions/index.css`
@@ -76,7 +62,7 @@ Use these files to complete the implementation:
 <summary>Click to view</summary>
 <br>
 
-- You can use the `box-shadow` CSS property to apply the box-shadow effect to containers
+- I have used the `box-shadow` CSS property to apply the box-shadow effect to containers
 
   ```
     box-shadow: 0px 4px 16px 0px #bfbfbf;
@@ -85,7 +71,7 @@ Use these files to complete the implementation:
   <br/>
    <img src="https://assets.ccbp.in/frontend/content/react-js/box-shadow-img.png" alt="box shadow" style="width:200px" />
 
-- You can use the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
+- I have used the `cursor` CSS property to specify the mouse cursor to be displayed when pointing over an element
 
   ```
     cursor: pointer;
@@ -94,7 +80,7 @@ Use these files to complete the implementation:
   <br/>
    <img src="https://assets.ccbp.in/frontend/content/react-js/cursor-pointer-img.png" alt="cursor pointer" style="width:100px" />
 
-- You can use the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
+- I have used the below `outline` CSS property for buttons and input elements to remove the highlighting when the elements are clicked
 
   ```
     outline: none;
@@ -130,10 +116,3 @@ Use these files to complete the implementation:
 - Roboto
 
 </details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
