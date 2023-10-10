@@ -18,8 +18,6 @@ In this project, I have build a **Google Search Suggestions** app by applying th
 
 </details>
 
-### Completion Instructions
-
 <details>
 <summary>Functionality added</summary>
 <br/>
@@ -48,7 +46,7 @@ This app have the following functionalities
 <summary>Implementation Files</summary>
 <br/>
 
-these files contain all implementations:
+use these files to see all implementations:
 
 - `src/components/GoogleSuggestions/index.js`
 - `src/components/GoogleSuggestions/index.css`
